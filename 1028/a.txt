@@ -1,0 +1,9 @@
+//  检测溢出
+
+
+int tmult_ok(int x, int y)
+{
+	//用64位的来存储int类型的乘法不会溢出
+	long long pll = (long long) x* y;  //先扩展,然后在计算乘积
+	return pll == (int) pll;  //检查是否改变它的值
+}
