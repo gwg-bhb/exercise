@@ -1,0 +1,7 @@
+long long unsigned required_size = ele_cnt * (long long unsigned) ele_size;
+size_t request_size = (size_t) required_size;
+if(request_size != request_size) 
+	return NULL;
+	void * result = malloc(request_size);
+	if(result == NULL)
+	return NULL;
