@@ -31,5 +31,20 @@ int * bsearch(int *t, int n, int x)
 int main()
 {
 
+	int t[8] = {1,2,3,4,5,6,7,8};
+    int  find = 0;
+	scanf("%d",&find);
+	int * result = bsearch(t, 8, find);
+	if(result != NULL)
+	{
+
+	printf("the find num in it:");
+	printf("the %d is %d\n",find,*result);
+	}
+	else
+	{
+		printf("the num is not int it");
+		puts("\n");
+	}
 	return 0;
 }
