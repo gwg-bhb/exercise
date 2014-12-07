@@ -15,8 +15,11 @@ int main(int argc,char *argv[])
 	int count = 0;
 	char ch;
 
+		printf("optind = %d\n", optind);
 	while((ch = getopt(argc, argv, "d:t")) != EOF)
 	{
+		printf("ch = %c\n", ch);
+		printf("optind = %d\n", optind);
         switch(ch)
 		{
            case 'd':
@@ -32,6 +35,7 @@ int main(int argc,char *argv[])
 	}
 		argc -= optind;
 		argv += optind;
+		printf("optind = %d\n", optind);
 		if(thick)
 			puts("Thick crust");
 		if(delivery[0])
