@@ -9,7 +9,7 @@
 int main(void)
 {
 	int x = 10;
-	int y = 11;
+	int y = 1;
 	int z = add(x, y);
 
     printf("z = %d\n", z);

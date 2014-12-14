@@ -10,6 +10,7 @@
 
 int add(int x, int y)
 {
-//	int i = 0;
-	return x + y;
+	int i = 0;
+	i = x + y;
+	return i;
 }
