@@ -1,17 +1,10 @@
 /*************************************************************************
-    > File Name: 1.c
+    > File Name: head.h
     > Author: GWG
     > Mail: 718324404@qq.com 
-    > Created Time: 2014年12月14日 星期日 23时38分53秒
+    > Created Time: 2014年12月15日 星期一 01时10分42秒
  ************************************************************************/
 
+#include <stdio.h>
 
-int main(void)
-{
-	int x = 10;
-	int y = 11;
-	int z = add(x, y);
-
-    printf("z = %d\n", z);
-	return 0;
-}
+int add(int, int);
