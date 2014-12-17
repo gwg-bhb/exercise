@@ -6,7 +6,7 @@
  ************************************************************************/
 
 #include <stdio.h>
-
+#include <string.h>
 
 struct fish
 {
@@ -30,5 +30,10 @@ int main(void)
 	struct fish fish1 = {"Snappy", "Piranha", 69, 4};
 	label(fish1);
 	catalog(fish1);
+	puts("-------------------------------");
+	struct fish fish2 = fish1;
+	label(fish2);
+	catalog(fish2);
+    printf("name:%s\n", fish2.name);
 	return 0;
 }
