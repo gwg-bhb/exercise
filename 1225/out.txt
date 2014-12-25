@@ -2,11 +2,11 @@ island:hello
 open:09:00 - 17:00
 island:world
 open:09:00 - 17:00
-island:nihao
+island:what
 open:09:00 - 17:00
-island:wikiki
+island:is
 open:09:00 - 17:00
-island:xiaweiyi
+island:your 
 open:09:00 - 17:00
-island:England
+island:name
 open:09:00 - 17:00
