@@ -1,0 +1,12 @@
+island:hello
+open:09:00 - 17:00
+island:world
+open:09:00 - 17:00
+island:nihao
+open:09:00 - 17:00
+island:wikiki
+open:09:00 - 17:00
+island:xiaweiyi
+open:09:00 - 17:00
+island:England
+open:09:00 - 17:00
