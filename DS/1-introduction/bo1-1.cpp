@@ -5,9 +5,7 @@
     > Created Time: 2015年03月18日 星期三 20时45分28秒
  ************************************************************************/
 
-#include "c1-1.h"
-
-Status InitTriplet(Triplet &T, ElemType v1, ElemType v2, Elemype v3)
+Status InitTriplet(Triplet &T, ElemType v1, ElemType v2, ElemType v3)
 {
 	//  操作结果：构造三元组，依次置T的3个元素的初始值为v1，v2，v3
 	//成功返回OK，分配失败返回OVERFLOW
@@ -64,7 +62,7 @@ Status IsAscending(Triplet T)
 	//初始条件：三元组已经存在
 	//操作结果：如果T按照升序排列，返回1（OK），否则返回0
 	
-	return (T[0] <= T[1] && T[1] <= T[2]);
+	return (T[0]<=T[1] && T[1]<=T[2]);
 }
 
 Status IsDescending(Triplet T)
@@ -92,4 +90,5 @@ Status Min(Triplet T, ElemType &e)
 	//sucess return OK
 	
 	e = (T[0] <= T[1])?(T[0] <= T[2] ? T[0] : T[2]) : (T[1] <= T[2] ? T[1] : T[2]);
+	return OK;
 }

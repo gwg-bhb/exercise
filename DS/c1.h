@@ -7,7 +7,10 @@
 
 #include <stdio.h>
 #include <string.h>
-
+#include <stdlib.h>  //free
+#include <math.h>    //OVERFLOW==3
+#include <iostream> //cout ,cin
+using namespace std;
 
 #define OK 1
 #define ERROR 0
