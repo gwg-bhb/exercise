@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>  //free
+#include <stdlib.h>  //free,abs
 #include <math.h>    //OVERFLOW==3
 #include <iostream> //cout ,cin
 using namespace std;

@@ -18,8 +18,10 @@ int comp(ElemType a, ElemType b)
 {
 	if(a == b)
 		return 0;
+	else if(0 > (a-b))
+		return -1;
 	else
-		return (a - b)/abs(a-b);
+		return 1;
 }
 
 void print(ElemType c)
