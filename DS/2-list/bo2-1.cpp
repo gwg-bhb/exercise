@@ -90,7 +90,7 @@ int LocateElem(Sqlist L, ElemType e, Status (*compare)(ElemType,ElemType))
 		return 0;
 }
 
-Status PriorElem(Sqlist L, ElemType cur_e, Elemtype &pre_e)
+Status PriorElem(Sqlist L, ElemType cur_e, ElemType &pre_e)
 {
     //初始条件：线性表L已经存在
 	//操作结果：若cur_e是L的数据元素，并且不是第一个，则用pre_e返回前驱
@@ -149,9 +149,9 @@ Status ListInsert(Sqlist &L, int i, ElemType e)
 		L.listsize += LIST_INCREMENT;
 	}
 	q = L.elem + i -1;
-	for(p= L.elem+L.length; p > q; --p)
+	for(p= L.elem+L.length; p > q;--p)
 	{
-		*p = *(p--);
+		*p = *(p-1);
 	}
 	*q = e;
 	++L.length;
