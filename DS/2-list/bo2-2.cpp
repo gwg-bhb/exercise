@@ -171,7 +171,7 @@ Status ListInsert(LinkList &L, int i, ElemType e)
 	if( i < 1 || i > ListLength(L)+1)
 		return ERROR;
 	LinkList p = L->next, q = L;
-	LinkList new_data = (LinkList)mallco(sizeof(Lnode));
+	LinkList new_data = (LinkList)malloc(sizeof(Lnode));
 	if(!new_data)
 		return ERROR;
 	new_data->data = e;
