@@ -177,12 +177,37 @@ Status PriorElem(LinkList L, ElemType cur_e, ElemType &prior_e)
 	//返回前驱
 	
 	LinkList p = L, q = NULL;
-	
+    
+	while((cur_e != p->data) && p != NULL)
+	{
+		q = p;
+		p = p->next;
+	}
 
-
+	if(P != NULL && q != NULL)
+     {
+		 prior_e = q->data;
+		 return OK;
+	 }
+	return ERROR;
 }
 
 Status NextElem(LinkList L, ElemType cur_e, ElemType &next_e)
 {
 	//返回后继
+	
+	LinkList p = L, q = p->next;
+
+	while((cur_e != p->data) && p != NULL)
+	{
+		p = p->next;
+	}
+
+	if((p != NULL) && (p->next != NULL))
+	{
+		next_e = p->next->data;
+		return OK;
+	}
+	return ERROR;
+
 }
